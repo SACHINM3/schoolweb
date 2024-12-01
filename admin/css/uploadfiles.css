@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.content_box{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+.nav_links li{
+    list-style: none;
+}
+.nav_links li a{
+    text-decoration: none;
+}
+
+.sidebar{
+    width: 20%;
+    height: 100vh;
+    background-color: #0A2558; ;
+}
+
+.sidebar .logo-details{
+    display: flex;
+    height: 73px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.logo_name{
+    font-size: 26px; 
+   
+}
+
+.logo-details i{
+    font-size: 22px;
+    margin-right: 8px;
+}
+
+.nav_links{
+    height: fit-content;
+    position: relative;
+    top: 30px;
+}
+.nav_links li a{
+    color: white;
+    margin: 15px;
+    padding-top: 15px;
+    font-size: 18px;
+    transition: all 0.4s ease;
+}
+.nav_links i{
+    margin-right: 3px;
+}
+.nav_links li{
+    
+    padding: 9px;
+    height: 45px;
+    margin-bottom: 8px;
+    
+}
+.nav_links li:hover{
+    background: #081D45;
+}
+
+.bottom{
+    position: absolute;
+    width: 20%;
+    bottom: 0;
+    
+}
+
+.bottom li{
+    padding: 9px;
+    
+    height: 45px;
+    margin-bottom: 3px;
+    list-style: none;
+}
+.bottom li:hover{
+    background-color: #081D45;
+}
+.bottom li a{
+    color: white;
+    margin: 15px;
+    padding-top: 15px;
+    font-size: 18px;
+    transition: all 0.4s ease;
+    text-decoration: none;
+}
+
+.bottom li i{
+    margin-right: 3px;
+}
+.n{
+    width: 80%;
+    height: 100vh;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    height: 73px;
+    background: #fff;
+    align-items: center;
+    position: sticky;
+    padding: 0 20px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+.nav .admin p{
+    font-size: 26px;
+}
+
+.back_btn{
+    color: #fff;	
+    background: #0A2558 ;
+    border-radius: 48px;
+    width: 170px;
+    font-family: var(--lato);
+    font-weight:550;
+    font-size: 12px;
+    padding: 9px;
+    border: none;
+  }
+
+  .back_btn i{
+    font-size: 10px ;
+  }
+
+  /* navbar end */
+
+  .upload{
+    height: fit-content;
+    width: fit-content;
+    position: relative;
+    top: 10px;
+    /* left: 399px; */
+    margin: auto;
+    font-family: var(--poppins);
+    /* margin-bottom: -10px; */
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: 16px;
+    flex-wrap: wrap;
+  
+    /* background-color: #283267; */
+  }
+  .upload p{
+    font-size: 30px;
+
+  }
+
+  
+.form-container{
+    border-radius: 5px;
+    padding: 8px;
+    width: fit-content;
+    position: relative;
+    margin: auto;
+  }
+  
+  
+  .controls{
+  background-color: #fff;
+  margin: 20px ;
+  padding: 30px 20px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 570px;
+  flex-direction: column;
+  }
+  
+  .control-bx{
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  
+  
+  .controls input,
+  .controls select,
+  .controls textarea {
+    border: 1px solid #777;
+    border-radius: 2px;
+    font-family: inherit;
+    padding: 10px;
+    display: block;
+    width: 330px;
+  }
+  
+  .btn_upload{
+    color: #fff;
+    transition: width .3s ease;	
+    background: #3C91E6 ;
+    width: 330px;
+    font-family: var(--lato);
+    font-weight:550;
+    margin-top: 18px;
+    font-size: 18px;
+    padding: 9px;
+    border: none;
+  }
+  
+  .btn-reset{
+  color: #fff;
+  transition: width .3s ease;	
+  background: #e2171d ;
+  width: 330px;
+  font-family: var(--lato);
+  font-weight:550;
+  margin-top: 7px;
+  font-size: 18px;
+  padding: 9px;
+  border: none;
+  
+  }
+  .btn_upload:hover{
+    background: #11ce11;
+  }
+  
+  .btn-reset:hover{
+    background: #33e24a;
+  }
+  
+  
+  .bx-left-arrow-circle{
+    font-size: 20px;
+  }
+
+  .home-content{
+    overflow-y: scroll;
+    height: 100%;
+    padding-bottom: 100px;
+}
+
+/* navbar  --- steady page jo constant rhega */

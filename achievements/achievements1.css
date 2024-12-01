@@ -1,0 +1,379 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  background-color: rgb(255, 255, 255);
+  /* background:rgba(0, 0, 0, 0.3) url(../img/pexels-andrew-neel-3178786.jpg); */
+  background-size: cover;
+  background-blend-mode: darken;
+  background-position-y: -50%;
+  display: flex;
+  position: sticky;
+  top: 0;
+  height: 75px;
+  z-index: +1;
+  border-bottom: 1px solid black;
+}
+
+.logo {
+  width: 18%;
+  background-position-y: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  border-radius: 70%;
+  width: 40%;
+  height: 100%;
+}
+
+.leftnav {
+  width: 85%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.leftnav li:hover {
+  list-style: none;
+  margin: -1px;
+  padding: 27px 19px;
+  background-color: rgb(12, 176, 241);
+  color: rgb(0, 0, 0);
+}
+.leftnav li {
+  list-style: none;
+  margin: -1px;
+  padding: 19px;
+}
+
+.leftnav li a {
+  text-decoration: none;
+  color: rgb(5, 5, 5);
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.leftnav li a:hover {
+  text-decoration: none;
+  color: rgb(228, 24, 24);
+  font-size: 18px;
+  text-decoration: none;
+}
+.rightnav {
+  width: 15%;
+  text-align: center;
+}
+button.btn#login-btn {
+  display: none;
+  font-family: auto;
+  padding: 5px 7px;
+  border: 2px solid black;
+  font-size: 18px;
+  margin: 21.5px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+button.btn#profile-btn{
+  display: none;
+  font-family: auto;
+  padding: 5px 7px;
+  border: 2px solid black;
+  font-size: 18px;
+  margin: 21.5px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+#favicon{
+  border-radius: 20px;
+  border: 2px;
+}
+
+
+/* profile btn */
+
+.profile{
+  background-color: #ffffff; 
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 2px;
+  
+}
+
+.dropdown {
+position: relative;
+display: inline-block;
+direction:rtl;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  
+visibility: hidden;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+position: absolute;
+background-color: #f1f1f1;
+width: 140px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+
+#profile_1{
+display: flex;
+}
+
+#profile_text:hover{
+cursor: pointer;
+}
+
+#profile_text{
+font-size: 11px;
+}
+#img-btn{
+  position: relative;
+  margin-top: 8px;
+  width: 38px;
+  height: 41px;
+  cursor: pointer;
+  object-fit: cover;
+  border-radius: 50%
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+color: black;
+padding: 12px 54px;
+text-decoration: none;
+display: block;
+
+}
+
+#myDropdown{
+position: absolute;
+left: -80px;
+overflow-x: hidden;
+border-radius: 15px;
+overflow-y: hidden;
+top: 1px;
+width: 116px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;
+  
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {visibility:visible;}
+
+
+
+/* navbaaaaaaar */
+
+.container{
+    width: 100%;
+    height: 100%;
+    position: sticky;
+}
+
+.all_cards{
+    position: relative;
+    top: 40px;
+    left: 84px;
+    width: 95vw;
+    height: 141vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 0px
+}
+.card {
+    position: relative;
+    top:20px;
+    width: 300px;
+    height: 180px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    background: #fff;
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    height: 320px;
+    box-shadow:
+    inset 0 0 60px whitesmoke,
+    0 0 50px #fff,
+    -10px 0 40px rgb(78, 113, 250),
+    10px 0 40px #0ff;
+  }
+  
+  .imgbox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+  }
+  
+  .all_cards .card img {
+    width: 100%;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+    transform: translateY(-10px);
+    transition: 0.3s;
+  }
+  
+  .content_not-seen {
+    padding: 10px 20px;
+    text-align: center;
+    transform: translateY(-130px);
+    opacity: 0;
+    transition: 0.3s;
+  }
+  
+  .card:hover > .content_not-seen {
+    opacity: 1;
+    transform: translateY(-154px);
+  }
+  .card:hover > .imgbox img{
+    transform: translateY(-40px);
+  }
+  
+  .content_not-seen h2 {
+    color: #7f9ead;
+  }
+
+  .leftnav .drop-menu{
+    background-color: rgb(210, 214, 216);
+    top: 85px;
+    line-height: 20px;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .leftnav  li:hover > .drop-menu{
+    top: 65px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.4s ease;
+  
+  }
+
+  .drop-menu li:hover{
+      background-color: #5cc3f6;
+  }
+  .leftnav .drop-menu li a{
+    width: 100%;
+    display: block;
+    font-size: 18px;
+    padding: 0 0 0 10px;
+    font-weight: 400;
+    border-radius: 2px;
+  }
+  .container-footer{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 50px 0;
+    margin-top: 20px;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+   line-height: 35px;
+}
+.copyright i{
+    font-size: 25px;
+}
+.copyright p{
+    font-size: 17px;
+}
